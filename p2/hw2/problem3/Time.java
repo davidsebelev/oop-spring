@@ -88,7 +88,7 @@ public class Time {
 
 
     public static void main(String[] args) {
-        Time tm = new Time(10,0,0);
+        Time tm = new Time(0,0,11110);
         System.out.println("Universal " + tm.getUniversal());
         System.out.println("Standart " + tm.getStandart());
 

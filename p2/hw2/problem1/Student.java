@@ -14,6 +14,9 @@ public class Student {
         this.yearOfStudy = 1;
     }
 
+    // public void setName(String name){
+    //     this.name = name;
+    // }
 
     public String getName(){
         return studentName;
