@@ -1,3 +1,4 @@
+package p2.hw2.problem1;
 public class Student {
 
 //     Implement a class Student. Student has a name, id and a year of study.
