@@ -9,9 +9,9 @@ public class GradeBookTest {
             "OOP basics",
             5,
             "Programming Principles 1 & 2"
-    );
+        );
 
-    Student s1 = new Student("Student A", "1");
+        Student s1 = new Student("Student A", "1");
         Student s2 = new Student("Student B", "4");
         Student s3 = new Student("Student C", "7");
         Student s4 = new Student("Student D", "87");

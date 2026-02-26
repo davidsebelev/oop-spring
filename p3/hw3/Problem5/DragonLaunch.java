@@ -33,7 +33,7 @@ public class DragonLaunch {
 
         dg.kidnapPerson(new Person(Gender.BOY,  "A", "A"));
         dg.kidnapPerson(new Person(Gender.GIRL, "B", "B")); 
-        // dg.kidnapPerson(new Person(Gender.BOY,  "C", "C"));
+        dg.kidnapPerson(new Person(Gender.BOY,  "C", "C"));
 
         System.out.println(dg.willDragonEatOrnot()); 
     }
