@@ -1,6 +1,8 @@
 import java.util.Vector;
 
-public class Employee extends Person {
+import Problem4.Student;
+Person4
+public class Employee extends PersonP {
 
     public Employee(String name){
         super(name);
@@ -11,12 +13,12 @@ public class Employee extends Person {
     }
 
     public static void main(String[] args) {
-        Vector<Person> people = new Vector<Person>();
+        Vector<PersonP> people = new Vector<PersonP>();
         people.add(new Student("David"));
-        people.add(new Person("Alim"));
+        people.add(new PersonP("Alim"));
         people.add(new Employee("Max"));
 
-        for(Person p : people){
+        for(PersonP p : people){
             System.out.println(p);
         }
     }

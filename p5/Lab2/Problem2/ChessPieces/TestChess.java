@@ -11,7 +11,7 @@ public class TestChess {
         System.out.println("Bishop (2,2) -> (2,5): " + bishop.isLegalMove(new Position(2, 5))); 
 
 
-        Knight knight = new Knight(new Position(4, 4));
+        KnightS knight = new KnightS(new Position(4, 4));
         System.out.println("Knight (4,4) -> (6,5): " + knight.isLegalMove(new Position(6, 5)));
         System.out.println("Knight (4,4) -> (5,5): " + knight.isLegalMove(new Position(5, 5))); 
 

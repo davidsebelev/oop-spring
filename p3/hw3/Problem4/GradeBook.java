@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 public class GradeBook {
-    Map<Student, Integer> grades = new HashMap<>();
+    Map<Students, Integer> grades = new HashMap<>();
     Map<String,String> gradeDistMap = new HashMap<>();
     // логика такая что если баллы попадают в промежуток то счечтик++ и потом после всех проходов по оценкам мы перемножаем значок на счетчик
     // среднее исчем как обычно
@@ -28,7 +28,7 @@ public class GradeBook {
         if(grades.isEmpty())return 0;
         int maxGrade = Integer.MIN_VALUE;
 
-    for (Map.Entry<Student, Integer> entry : grades.entrySet()) {
+    for (Map.Entry<Students, Integer> entry : grades.entrySet()) {
     int grade = entry.getValue();
 
     if (grade > maxGrade) {
@@ -43,7 +43,7 @@ public class GradeBook {
 
         int[] cnt = new int[11];
     
-        for (Map.Entry<Student, Integer> entry : grades.entrySet()) {
+        for (Map.Entry<Students, Integer> entry : grades.entrySet()) {
             int grade = entry.getValue();
             
             if(grade == 100){
@@ -77,12 +77,12 @@ public class GradeBook {
 
     
 
-    public Student returnBestGradePerson(){
+    public Students returnBestGradePerson(){
         if(grades.isEmpty())return null;
         int maxGrade = Integer.MIN_VALUE;
-        Student bestStudent = null;
+        Students bestStudent = null;
 
-    for (Map.Entry<Student, Integer> entry : grades.entrySet()) {
+    for (Map.Entry<Students, Integer> entry : grades.entrySet()) {
     int grade = entry.getValue();
 
     if (grade > maxGrade) {
@@ -97,7 +97,7 @@ public class GradeBook {
         if(grades.isEmpty())return 0;
         int minGrade = Integer.MAX_VALUE;
 
-        for (Map.Entry<Student, Integer> entry : grades.entrySet()) {
+        for (Map.Entry<Students, Integer> entry : grades.entrySet()) {
             int grade = entry.getValue();
 
             if(grade < minGrade){
@@ -107,12 +107,12 @@ public class GradeBook {
         return minGrade;
     }
 
-    public Student returnLowGragePerson(){
+    public Students returnLowGragePerson(){
         if(grades.isEmpty())return null;
         int minGrade = Integer.MAX_VALUE;
-        Student lowStudent = null;
+        Students lowStudent = null;
 
-        for (Map.Entry<Student, Integer> entry : grades.entrySet()) {
+        for (Map.Entry<Students, Integer> entry : grades.entrySet()) {
             int grade = entry.getValue();
 
             if(grade < minGrade){
@@ -127,7 +127,7 @@ public class GradeBook {
         double sum = 0;
         double cnt = 0;
 
-        for (Map.Entry<Student, Integer> entry : grades.entrySet()) {
+        for (Map.Entry<Students, Integer> entry : grades.entrySet()) {
             int grade = entry.getValue();
             sum +=grade;
             cnt++;
@@ -148,10 +148,10 @@ public class GradeBook {
         double averageGrade = returnAverageGrade();
 
         int minScore = returnLowGrage();
-        Student miStudent = returnLowGragePerson();
+        Students miStudent = returnLowGragePerson();
 
         int maxScore = returnBestGrade();
-        Student maxStudent = returnBestGradePerson();
+        Students maxStudent = returnBestGradePerson();
 
         System.out.print("Class average is" + averageGrade);
 
@@ -178,11 +178,11 @@ public class GradeBook {
         return "GradeBook for course:\n" + course + "\nStudents: " + grades.size();
     }
     
-    public void addStudent(Student name, int grade){
+    public void addStudent(Students name, int grade){
         grades.put(name,grade);
     }
 
-    public void addStudentGrade(Student student, int grade){
+    public void addStudentGrade(Students student, int grade){
         grades.put(student, grade);
     }
 
@@ -193,9 +193,9 @@ public class GradeBook {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Student s1 = new Student("Ivan", "1");
-        Student s2 = new Student("Anna", "2");
-        Student s3 = new Student("David", "3");
+        Students s1 = new Students("Ivan", "1");
+        Students s2 = new Students("Anna", "2");
+        Students s3 = new Students("David", "3");
 
         Course cs = new Course("Object Oriented Programming and Design", "shortly oop", 5, "Programming Principles 1 & 2");
         GradeBook gb = new GradeBook(cs);

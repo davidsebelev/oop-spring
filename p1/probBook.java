@@ -7,7 +7,7 @@ public class probBook {
     Scanner input = new Scanner(System.in);
     
 
-    Person p = new Person();
+    PersonP p = new PersonP();
     int ageFromUser = input.nextInt();
 
     p.setAge(ageFromUser);

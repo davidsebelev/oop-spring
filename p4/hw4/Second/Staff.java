@@ -1,4 +1,4 @@
-public class Staff extends Person {
+public class Staff extends PersonP {
     private String school;
     private double pay;
 

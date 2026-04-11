@@ -5,7 +5,7 @@ public class test {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Vector<Person> people = new Vector<Person>();
+        Vector<PersonP> people = new Vector<PersonP>();
 
         while (true) {
         System.out.println("1 - Add");
@@ -31,7 +31,7 @@ public class test {
             
 
             if(type == 1){
-                people.add(new Person(name, address));
+                people.add(new PersonP(name, address));
             }else if(type == 2){
                 System.out.println("Year: ");
                 int year = sc.nextInt();
@@ -46,7 +46,7 @@ public class test {
                 double fee = sc.nextDouble();
 
 
-                people.add(new Student(name, address,program,year,fee));
+                people.add(new Students(name, address,program,year,fee));
             }else if(type == 3){
                 // sc.nextLine();
 
@@ -64,7 +64,7 @@ public class test {
             if(people.isEmpty()){
                 System.out.println("There is no people!");
             }else{
-                for (Person p : people) {
+                for (PersonP p : people) {
                     System.out.println(p);
                 }
             }

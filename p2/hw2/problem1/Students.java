@@ -1,5 +1,5 @@
 package p2.hw2.problem1;
-public class Student {
+public class Students {
 
 //     Implement a class Student. Student has a name, id and a year of study.
 // Provide a constructor with two parameters and create methods to access name, id and
@@ -9,7 +9,7 @@ public class Student {
     private String studentId;
     private int yearOfStudy;
 
-    public Student(String studentName,String studentId){
+    public Students(String studentName,String studentId){
         this.studentName = studentName;
         this.studentId = studentId;
         this.yearOfStudy = 1;
@@ -36,7 +36,7 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student s1 = new Student("David", "24B032010");
+        Students s1 = new Students("David", "24B032010");
         System.out.println(s1.getName());
         System.out.println(s1.getId()); 
         System.out.println(s1.getYearOfStudy());  

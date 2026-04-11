@@ -1,10 +1,10 @@
 import java.util.Vector;
 public class DragonLaunch {
-    Vector<Person> kidnapped = new Vector<>();
-    Vector<Person> result = new Vector<>();
+    Vector<PersonP> kidnapped = new Vector<>();
+    Vector<PersonP> result = new Vector<>();
     String willOrNot = "";
 
-    public void kidnapPerson(Person p){
+    public void kidnapPerson(PersonP p){
         kidnapped.add(p);
     }
 
@@ -12,12 +12,12 @@ public class DragonLaunch {
     public boolean willDragonEatOrnot(){
         
         for (int i = 0; i < kidnapped.size(); i++) {
-            Person current = kidnapped.get(i);
+            PersonP current = kidnapped.get(i);
         
             if (result.isEmpty()) {
                 result.add(current);
             } else {
-                Person last = result.lastElement();
+                PersonP last = result.lastElement();
                 if (last.getGender() == Gender.BOY && current.getGender() == Gender.GIRL) {
                     result.remove(result.size() - 1);
                 } else {
@@ -31,9 +31,9 @@ public class DragonLaunch {
     public static void main(String[] args) {
         DragonLaunch dg = new DragonLaunch();
 
-        dg.kidnapPerson(new Person(Gender.BOY,  "A", "A"));
-        dg.kidnapPerson(new Person(Gender.GIRL, "B", "B")); 
-        dg.kidnapPerson(new Person(Gender.BOY,  "C", "C"));
+        dg.kidnapPerson(new PersonP(Gender.BOY,  "A", "A"));
+        dg.kidnapPerson(new PersonP(Gender.GIRL, "B", "B")); 
+        dg.kidnapPerson(new PersonP(Gender.BOY,  "C", "C"));
 
         System.out.println(dg.willDragonEatOrnot()); 
     }

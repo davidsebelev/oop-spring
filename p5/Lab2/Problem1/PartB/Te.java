@@ -1,4 +1,4 @@
-public class Test {
+public class Te {
     public static void main(String[] args) {
         Book b = new Book("Bobobo", "David", 1984, 996, "Fantasy");
 

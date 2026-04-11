@@ -1,6 +1,6 @@
-public class Knight extends Piece {
+public class KnightS extends Piece {
 
-    public Knight(Position a){
+    public KnightS(Position a){
         super(a);
     }
 

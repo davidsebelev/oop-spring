@@ -1,9 +1,9 @@
-public class Person {
+public class PersonP {
     Gender gender;
     private String  firstname;
     private String lastname;
 
-    Person(Gender gender, String firstname, String lastname){
+    PersonP(Gender gender, String firstname, String lastname){
         this.gender = gender;
         this.firstname = firstname;
         this.lastname = lastname;

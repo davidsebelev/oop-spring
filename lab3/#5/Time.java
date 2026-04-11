@@ -111,4 +111,5 @@ public class Time implements Comparable<Time> {
 public String toString() {
     return String.format("%02d:%02d:%02d", hour, minute, second);
 }
+    
 }

@@ -4,7 +4,7 @@ public class Game {
         Goblin goblin = new Goblin("Goblin", 40);
         WoodenBox box = new WoodenBox("Wooden Box");
         Rock rock = new Rock("Rock");
-        Chest chest = new Chest("Treasure Chest");
+        Chest chest = new Chest("Chest");
 
         System.out.println("Attack Goblin");
         knight.attack(goblin);

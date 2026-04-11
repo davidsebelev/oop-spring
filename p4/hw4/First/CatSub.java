@@ -1,13 +1,13 @@
-public class Cat extends Animal {
-    public Cat(String name,String typeAn){
+public class CatSub extends Animal {
+    public CatSub(String name,String typeAn){
         super(name,typeAn);
     }
 
-    public Cat(){
+    public CatSub(){
         super();
     }
 
-    public Cat(String name){
+    public CatSub(String name){
         super(name);
     }
 
@@ -21,8 +21,8 @@ public class Cat extends Animal {
     }
 
     public static void main(String[] args) {
-        Cat c = new Cat("Dodya","White");
-        Animal a = new Cat("Barsik");
+        CatSub c = new CatSub("Dodya","White");
+        Animal a = new CatSub("Barsik");
         System.out.println(c.getNoise());
         System.out.println(c.getType());
         System.out.println(a.getNoise());
